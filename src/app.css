@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Inter';
+	font-weight: 400;
+	/* line-height: 20px; */
+	color: #131314;
+}
+
+.scrollerImg {
+	width: 178px !important;
+	height: 121px !important;
+}
+.scrollerLittleCard {
+	width: 216.8px !important;
+	height: 165.38px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 36px;
+	height: 36px;
+	transition: opacity 0.16s ease-in-out;
+	z-index: 55;
+	border-radius: 50%;
+	box-shadow: 0 0 15px rgba(65, 65, 65, 0.1);
+	cursor: pointer;
+	pointer-events: auto;
+	background-color: #fff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	font-size: 14px;
+	color: black;
+}
